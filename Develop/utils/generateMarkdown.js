@@ -93,7 +93,7 @@ function generateMarkdown(data) {
   This application has been tested in a countless number of different environments to ensure peak performance. However, bugs may exist, especially when used in combination with additional packages. Please be sure to test the application after an initial download. 
   
   To test run the code after installing on your local device, use the following code:` +
-		`\n` +
+		`\npm run test` +
 		"```" +
 		data.tests +
 		"```" +

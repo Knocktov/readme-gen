@@ -1,6 +1,6 @@
 
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./Develop/utils/generateMarkdown");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -90,7 +90,7 @@ async function init() {
 		
 		const markup = generateMarkdown(data);
 		
-		await writeFileAsync("README.md", markup);
+		await writeFileAsync("./Output/README.md", markup);
 	} catch (err) {
 		
 		console.log(err);
